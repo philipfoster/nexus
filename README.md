@@ -12,7 +12,7 @@ post:
     command:
       - "/bin/bash"
       - "-c"
-      - "curl -o /tmp/nexus-functions -s https://raw.githubusercontent.com/OpenShiftDemos/nexus/master/scripts/nexus-functions; source /tmp/nexus-functions; add_nexus3_redhat_repos admin admin123 http://${SERVICE_NAME}:8081"
+      - "curl -o /tmp/nexus-functions -s https://raw.githubusercontent.com/philipfoster/nexus/master/scripts/nexus-functions; source /tmp/nexus-functions; add_nexus3_redhat_repos admin admin123 http://${SERVICE_NAME}:8081"
 ```
 
 # Import Templates
@@ -21,14 +21,14 @@ In order to add Sonatype Nexus templates to OpenShift service catalog run the fo
 
 Sonatype Nexus 2:
 ```
-oc create -f https://raw.githubusercontent.com/OpenShiftDemos/nexus/master/nexus2-template.yaml
-oc create -f https://raw.githubusercontent.com/OpenShiftDemos/nexus/master/nexus2-persistent-template.yaml
+oc create -f https://raw.githubusercontent.com/philipfoster/nexus/master/nexus2-template.yaml
+oc create -f https://raw.githubusercontent.com/philipfoster/nexus/master/nexus2-persistent-template.yaml
 ```
 
 Sonatype Nexus 3:
 ```
-oc create -f https://raw.githubusercontent.com/OpenShiftDemos/nexus/master/nexus3-template.yaml
-oc create -f https://raw.githubusercontent.com/OpenShiftDemos/nexus/master/nexus3-persistent-template.yaml
+oc create -f https://raw.githubusercontent.com/philipfoster/nexus/master/nexus3-template.yaml
+oc create -f https://raw.githubusercontent.com/philipfoster/nexus/master/nexus3-persistent-template.yaml
 ```
 
 # Deploy Nexus 2
