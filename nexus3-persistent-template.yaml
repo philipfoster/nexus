@@ -128,6 +128,9 @@ objects:
       app: ${SERVICE_NAME}
     name: ${SERVICE_NAME}
   spec:
+    tls:
+      termination: edge
+      insecureEdgeTerminationPolicy: Allow
     port:
       targetPort: 8081-tcp
     to:
