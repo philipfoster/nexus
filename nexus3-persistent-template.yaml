@@ -144,7 +144,7 @@ objects:
   metadata:
     labels:
       app: ${SERVICE_NAME}
-    name: ${SERVICE_NAME}
+    name: nexus
   spec:
     tls:
       termination: edge
