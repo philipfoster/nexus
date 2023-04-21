@@ -159,8 +159,8 @@ objects:
   kind: Route
   metadata:
     labels:
-      app: ${SERVICE_NAME}-docker
-    name: ${SERVICE_NAME}
+      app: ${SERVICE_NAME}
+    name: ${SERVICE_NAME}-docker
   spec:
     tls:
       termination: edge
