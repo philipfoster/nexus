@@ -160,7 +160,7 @@ objects:
   metadata:
     labels:
       app: ${SERVICE_NAME}
-    name: ${SERVICE_NAME}-docker
+    name: nexus-docker
   spec:
     tls:
       termination: edge
